@@ -27,14 +27,20 @@ twitter_username: nil
 github_username:  takashi-matsushita
 
 # Build settings
-future: true
 published: true
 show_downloads: false
 google_analytics:
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+future: true
+jailed: false
+gfm_quirks: paragraph_end
 #theme: minima
 theme: jekyll-theme-minimal
 github: [metadata]
+encoding: UTF-8
 plugins:
   - jekyll-feed
 pages_list:

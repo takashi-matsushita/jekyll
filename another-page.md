@@ -1,5 +1,6 @@
 ---
 layout: post
+title: blogs
 ---
 
 ## Welcome to another page
