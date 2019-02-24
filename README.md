@@ -13,4 +13,4 @@ git push origin gh-pages
 git tag -a minima-initial -m "initial setting working on github"
 git push origin minima-initial
 
-
+bundle exec jekyll serve
