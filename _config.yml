@@ -14,7 +14,7 @@ github_username:  takashi-matsushita
 # Build settings
 published: true
 show_downloads: false
-google_analytics:
+google_analytics: UA-45695282-2
 markdown: kramdown
 kramdown:
   input: GFM
