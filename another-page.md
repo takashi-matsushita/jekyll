@@ -245,31 +245,33 @@ end
 
 ----
 ```
-### Definition lists can be used with HTML syntax.
+### Definition lists
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+Name
+: Godzilla
+
+Born
+: 1952
+
+Birthplace
+: Japan
+
+Color
+: Green
 ```
-### Definition lists can be used with HTML syntax.
+### Definition lists
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+Name
+: Godzilla
+
+Born
+: 1952
+
+Birthplace
+: Japan
+
+Color
+: Green
 
 ----
     ```
