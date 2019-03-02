@@ -5,7 +5,9 @@ title: KMNIST / くずし字認識
 author: Takashi MATSUSHITA
 ---
 
-ひらがなの[くずし字データ](https://www.kaggle.com/anokas/kuzushiji)[^1]を用いた画像認識を実装してみる. 今回用いるのは 49文字のデータセット.
+ひらがなの[くずし字データ](https://www.kaggle.com/anokas/kuzushiji)[^1]を用いた画像認識を実装してみる. 
+使用したコードは[こちら](https://github.com/takashi-matsushita/lab/blob/master/dnn/cnn-k49.py).
+今回用いるのは 49文字のデータセット. 
 文字毎の訓練用画像数を確認するとかなりのばらつきが見られる.
 
 <div align="center">
