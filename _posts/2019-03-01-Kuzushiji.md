@@ -20,7 +20,7 @@ Uniform Manifold Approximation and Projection [UMAP](https://github.com/lmcinnes
 
 MNIST   |  Kuzushiji
 :-:|:-:
-![MNIST-UMAP]({{ site.url }}/{{ site.baseurl }}/assets/img/mnist-umap.png){: style="max-width: 400px; height: auto;"} | ![K49-UMAP]({{ site.url }}/{{ site.baseurl }}/assets/img/cnn-k49-umap.png){: style="max-width: 400px; height: auto;"}
+![MNIST-UMAP]({{ site.url }}/{{ site.baseurl }}/assets/img/posts/mnist-umap.png){: style="max-width: 400px; height: auto;"} | ![K49-UMAP]({{ site.url }}/{{ site.baseurl }}/assets/img/posts/cnn-k49-umap.png){: style="max-width: 400px; height: auto;"}
 
 ConvNet には MNIST 画像データで 99.25% の精度を達成した[モデル](https://github.com/keras-team/keras/blob/master/examples/mnist_cnn.py) を流用する. 
 
