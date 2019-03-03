@@ -8,7 +8,7 @@ author: Takashi MATSUSHITA
 ひらがなの[くずし字データ](https://www.kaggle.com/anokas/kuzushiji)[^1]を用いた画像認識を実装してみる. 
 使用したコードは[こちら](https://github.com/takashi-matsushita/lab/blob/master/dnn/cnn-k49.py).
 今回用いるのは 49文字のデータセット. 
-文字毎の訓練用画像数を確認するとかなりのばらつきが見られる.
+文字毎の訓練用画像数を確認すると最大６千、最小千以下とかなりのばらつきが見られる.
 
 <div align="center">
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 800 600">
@@ -17,9 +17,10 @@ author: Takashi MATSUSHITA
 </div>
 
 Uniform Manifold Approximation and Projection [UMAP](https://github.com/lmcinnes/umap) を用いて学習用データの２次元分布を見ると、MNIST と比較して ごちゃごちゃしており分類は難しそう.
-<div class="img_container">
-![K49-UMAP]({{ site.url }}/{{ site.baseurl }}/assets/img/cnn-k49-umap.png){: style="max-width: 400px; height: auto;"}
-</div>
+
+MNIST   |  Kuzushiji
+:-:|:-:
+![MNIST-UMAP]({{ site.url }}/{{ site.baseurl }}/assets/img/mnist-umap.png){: style="max-width: 400px; height: auto;"} | ![K49-UMAP]({{ site.url }}/{{ site.baseurl }}/assets/img/cnn-k49-umap.png){: style="max-width: 400px; height: auto;"}
 
 ConvNet には MNIST 画像データで 99.25% の精度を達成した[モデル](https://github.com/keras-team/keras/blob/master/examples/mnist_cnn.py) を流用する. 
 

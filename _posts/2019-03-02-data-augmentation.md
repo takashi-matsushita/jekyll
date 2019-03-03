@@ -5,10 +5,10 @@ title: Data Augmentation / データ拡張
 author: Takashi MATSUSHITA
 ---
 
-ひらがなのくずし字データを用いた画像認識では、適合率、再現率、F値の全てで 0.87 を得た. しかし、学習用データの統計が文字毎にかなり異なっていたので、今回はデータ拡張を用いて画像認識の向上を試みる.
+ひらがなのくずし字データを用いた画像認識では、適合率、再現率、F値の全てで 0.87 を得た. しかし、学習用データの統計が文字毎にかなり異なっていたので、今回はデータ拡張を用いて画像認識の向上を試みる. 目指すは 0.90.
 
 とりあえず、全ての文字の学習用データ数が同じになるようにしてみる.
-各文字毎に足りない分を補完するために元画像へのポインターを作る.
+各文字毎に足りない分を補完するために元画像へのポインター (indices) を作る.
 
 ```python
 ### data augmentation, trying to have flat class distribution
@@ -23,7 +23,7 @@ for idx in idxs:
   idx_augment.extend(c_idxs)
 ```
 
-元画像からデータ拡張を行うために、ImageDataGenerator の設定を行う.
+元画像からデータ拡張を行うために、ImageDataGenerator の設定を行う. 画像に対して回転と上下・左右の移動を行う.
 ```python
 arguments = {
   'featurewise_center': False,
