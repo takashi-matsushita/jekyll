@@ -5,6 +5,7 @@ title: Object Recognition - Segmentation / 物体認識 - セグメンテーシ�
 author: Takashi MATSUSHITA
 ---
 
+### YOLO
 リアルタイムに物体検出が可能という [YOLOv3](https://pjreddie.com/darknet/yolo/) を Keras/Python を通して利用してみる. Keras を用いた YOLO の実装は[こちら](https://github.com/qqwweee/keras-yolo3).
 
 まずは、[ImageNet](http://www.image-net.org) の各種画像で物体検出を行ってみる. とある単語の [WordNet](https://wordnet.princeton.edu) ID を作成し、それを使用して対応する画像へのリンク一覧を ImageNet から得る.
@@ -95,6 +96,7 @@ Many cats | Cat & Dog | Good
 
 * * *
 
+### Mask R-CNN
 [Mask R-CNN](https://github.com/matterport/Mask_RCNN.git) は物体認識とセグメンテーションを同時に行える. ImageNet から 'pet' をキーワードにして取得した画像に対して、Mask R-CNN を適用してみた. コードは[こちら](https://github.com/takashi-matsushita/lab/blob/master/dnn/mask_rcnn.py). 偶にクラッシュするが原因は未だ追及していない. GPU 無しの MacBook Air だと処理が重い. 結果はイマイチな気がするが、このような画像を対象には最適化されていないのだろう.
 
  　| 人物と冷蔵庫
