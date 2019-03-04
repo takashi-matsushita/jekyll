@@ -4,33 +4,47 @@ permalink: /categories/
 title: Categories
 ---
 
+<p style="font-style: italic; text-align: right; font-size: 90%"><a href="/jekyll/post">Listings by dates &rarr;</a></p>
+
+<h3 align="center">Categories</h3>
+<ul style="list-style-type:circle; columns: 3;">
+{% assign categories_list = site.categories %}
+  {% if categories_list.first[0] == null %}
+    {% for category in categories_list %}
+    <li style="margin-left: 5em;"><a href="#{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }}</a> &nbsp;&middot;&middot;&middot;&nbsp; {{ site.tags[category].size }} posts</li>
+    {% endfor %}
+  {% else %}
+    {% for category in categories_list %}
+    <li style="margin-left: 5em;"><a href="#{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }}</a>&nbsp;&middot;&middot;&middot;&nbsp; {{ category[1].size }} posts</li>
+    {% endfor %}
+  {% endif %}
+{% assign categories_list = nil %}
+</ul>
 
 <div id="archives">
 {% for category in site.categories %}
-  <div class="archive-group">
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <p></p>
-    
-    <h3 class="category-head">{{ category_name }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
+  {% capture category_name %}{{ category | first }}{% endcapture %}
+  <h4 class="category-heda" id="{{ category_name | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category_name | camelcase }}</h4>
+  <hr/>
     <ul>
     {% for post in site.categories[category_name] %}
     <article class="archive-item">
       <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
         <span style="font-style: italic; font-size: 90%">
+        <!--
           &nbsp;&ndash;&nbsp;
           {{ post.author }}
+        -->
           &nbsp;&ndash;&nbsp;
           {{ post.date | date: "%B %e, %Y" }}
         </span>
         </br>
         <small>
-          {{ post.excerpt | strip_html | truncate: 100}}
+          {{ post.excerpt | strip_html | truncate: 60}}
         </small>
     </article>
     {% endfor %}
     </ul>
-  </div>
 {% endfor %}
 </div>
+

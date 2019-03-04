@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
+<p style="font-style: italic; text-align: right; font-size: 90%"><a href="/jekyll/categories">Listings by categories &rarr;</a></p>
 
 {% for post in site.posts %}
 
   {% assign currentdate = post.date | date: "%B %Y" %}
   {% if currentdate != date %}
   <h4 id="y{{post.date | date: "%Y"}}"> {{ currentdate }} </h4>
+  <hr/>
     {% assign date = currentdate %}
   {% endif %}
 
