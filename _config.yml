@@ -3,6 +3,8 @@ title: TM Web
 logo: /assets/img/logo.png
 email: nil
 description: ""
+author: Takashi MATSUSHITA
+
 baseurl: "/jekyll"
 url: "https://takashi-matsushita.github.io" # the base hostname & protocol
 production_url: "https://takashi-matsushita.github.io/jekyll"
