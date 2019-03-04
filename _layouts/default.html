@@ -60,6 +60,10 @@
 
       </section>
       <footer>
+        {% if site.logo %}
+          <img src="{{ site.url }}/{{ site.baseurl }}/assets/img/tea-ceremony.png" alt="Tea" />
+        {% endif %}
+
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
