@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="242 209 411.5 91.00001" width="411.5" height="91.00001">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="242" y="209">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Avenir" font-size="12" panose-1="2 11 7 3 2 2 3 2 2 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="480" cap-height="708" ascent="1e3" descent="-365.9973" font-weight="800">
+      <font-face-src>
+        <font-face-name name="Avenir-Heavy"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Lucida Grande" font-size="12" panose-1="2 11 6 0 4 5 2 2 2 4" units-per-em="1000" underline-position="-97.65625" underline-thickness="48.828125" slope="0" x-height="530.27344" cap-height="722.65625" ascent="966.7969" descent="-210.9375" font-weight="400">
+      <font-face-src>
+        <font-face-name name="LucidaGrande"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-9 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M -8 0 L 0 3 L 0 -3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-03-04 12:28:01 +0000</dc:date>
+  </metadata>
+  <g id="キャンバス______1" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none">
+    <title>キャンバス 1</title>
+    <rect fill="white" x="242" y="209" width="411.5" height="91.00001"/>
+    <g id="キャンバス______1: レイヤー 1">
+      <title>レイヤー 1</title>
+      <g id="Graphic_59_shadow" filter="url(#Shadow)">
+        <rect x="560" y="236.5" width="90" height="36" fill="white"/>
+        <rect x="560" y="236.5" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_59">
+        <rect x="560" y="236.5" width="90" height="36" fill="white"/>
+        <rect x="560" y="236.5" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(565 247.5)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="17.992188" y="11">policy [t]</tspan>
+        </text>
+      </g>
+      <g id="Graphic_60">
+        <title>State</title>
+        <path d="M 247 222 L 329 222 C 331.20914 222 333 223.79086 333 226 L 333 283 C 333 285.20914 331.20914 287 329 287 L 247 287 C 244.79086 287 243 285.20914 243 283 L 243 226 C 243 223.79086 244.79086 222 247 222 Z" fill="white"/>
+        <path d="M 247 222 L 329 222 C 331.20914 222 333 223.79086 333 226 L 333 283 C 333 285.20914 331.20914 287 329 287 L 247 287 C 244.79086 287 243 285.20914 243 283 L 243 226 C 243 223.79086 244.79086 222 247 222 Z" stroke="#b9c0c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(249 246.5)" fill="#515556">
+          <tspan font-family="Avenir" font-size="12" font-weight="800" fill="#515556" x="17.556" y="12">state [t]</tspan>
+        </text>
+      </g>
+      <g id="Graphic_77">
+        <text transform="translate(467.53974 267)" fill="black">
+          <tspan font-family="Lucida Grande" font-size="12" font-weight="400" fill="black" x=".33007812" y="12">observation [t]</tspan>
+        </text>
+      </g>
+      <g id="Graphic_78">
+        <text transform="translate(353.46026 267)" fill="black">
+          <tspan font-family="Lucida Grande" font-size="12" font-weight="400" fill="black" x=".18066406" y="12">action [t]</tspan>
+        </text>
+      </g>
+      <g id="Line_79">
+        <line x1="343.9" y1="254.5" x2="550.1" y2="254.5" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_62">
+        <title>Actor</title>
+        <path d="M 448.39205 211.64769 C 444.8618 208.11743 439.1382 208.11743 435.60795 211.64769 C 432.0777 215.17792 432.0777 220.90155 435.60795 224.4318 C 439.1382 227.96204 444.8618 227.96204 448.39205 224.4318 C 451.9223 220.90155 451.9223 215.17792 448.39205 211.64769 M 451.0402 239.7351 C 451.0303 239.33707 451.17725 238.93586 451.481 238.6321 C 452.0694 238.04372 453.02333 238.04372 453.6117 238.6321 C 453.91547 238.93586 454.0624 239.33707 454.0525 239.7351 L 454.0654 239.7351 L 454.0654 257.06126 C 454.0654 260.45116 453.6903 263.84106 457.0662 263.84106 C 460.4422 263.84106 460.06707 260.45116 460.06707 257.06126 L 460.06707 236.72186 L 460.07947 236.72186 C 460.07947 231.72935 455.2228 227.68212 449.2318 227.68212 L 442 227.68212 L 434.7682 227.68212 C 428.7772 227.68212 423.92053 231.72935 423.92053 236.72186 L 423.93293 236.72186 L 423.93293 257.06126 C 423.93293 260.45116 423.5578 263.84106 426.93377 263.84106 C 430.3097 263.84106 429.9346 260.45116 429.9346 257.06126 L 429.9346 239.7351 L 429.9475 239.7351 C 429.95675 239.36217 430.1037 238.99203 430.3883 238.70742 C 430.97667 238.11905 431.9306 238.11905 432.519 238.70742 C 432.8036 238.99203 432.95053 239.36217 432.9598 239.7351 L 432.96026 239.7351 L 432.96026 239.77126 C 432.96027 239.77226 432.96027 239.77327 432.96026 239.77428 L 432.96026 266.8543 L 432.9764 266.8543 L 432.9764 290.96027 C 432.9764 295.48014 432.48875 300 436.8775 300 C 441.2662 300 440.7786 295.48014 440.7786 290.96027 L 440.7786 266.8543 L 440.7953 266.8543 C 440.7853 266.5334 440.9028 266.2093 441.14773 265.96437 C 441.6184 265.49367 442.3816 265.49367 442.85227 265.96437 C 443.0972 266.2093 443.2147 266.5334 443.2047 266.8543 L 443.2214 266.8543 L 443.2214 290.96027 C 443.2214 295.48014 442.7338 300 447.1225 300 C 451.51125 300 451.0236 295.48014 451.0236 290.96027 L 451.0236 266.8543 L 451.03974 266.8543 L 451.03974 239.7351 Z" fill="#666a6b"/>
+      </g>
+      <g id="Line_80">
+        <line x1="335" y1="242" x2="414.02053" y2="242" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_81">
+        <text transform="translate(349.96026 214)" fill="black">
+          <tspan font-family="Lucida Grande" font-size="12" font-weight="400" fill="black" x=".4892578" y="12">reward [t]</tspan>
+        </text>
+      </g>
+      <g id="Line_82">
+        <line x1="465" y1="242" x2="550.1" y2="242" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_83">
+        <text transform="translate(481.53974 214)" fill="black">
+          <tspan font-family="Lucida Grande" font-size="12" font-weight="400" fill="black" x=".2783203" y="12">update [t]</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
