@@ -12,6 +12,6 @@ layout: default
     {% assign date = currentdate %}
   {% endif %}
 
-&bull; {{ post.date | date: "%d" }}&nbsp; - &nbsp;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> &nbsp; - &nbsp; {% if post.categories %} <small>categories: <em>{{ post.categories | join: "</em> - <em>" }}</em></small> {% endif %} {::comment} {% if post.tags %} <small>, tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small> {% endif %}{:/comment}
+&bull; {{ post.date | date: "%d" }}&nbsp; - &nbsp;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> &nbsp; - &nbsp; {% if post.categories %} <small>categories: <em>{{ post.categories | join: "</em> - <em>" }}</em></small> {% endif %} {% if post.tags %} <small>, tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small> {% endif %}
 
 {% endfor %}

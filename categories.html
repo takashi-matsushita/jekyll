@@ -37,6 +37,8 @@ title: Categories
         -->
           &nbsp;&ndash;&nbsp;
           {{ post.date | date: "%B %e, %Y" }}
+          &nbsp;&ndash;&nbsp;
+          {% if post.tags %} tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small> {% endif %}
         </span>
         </br>
         <small>
