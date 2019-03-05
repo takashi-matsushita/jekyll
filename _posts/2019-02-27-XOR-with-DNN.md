@@ -1,6 +1,7 @@
 ---
 layout: post
 categories: [AI,]
+tags: [MLP,]
 title: XOR を NN を用いて実装する
 author: Takashi MATSUSHITA
 ---

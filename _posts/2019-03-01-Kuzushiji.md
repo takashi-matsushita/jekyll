@@ -1,6 +1,7 @@
 ---
 layout: post
 categories: [AI,]
+tags: [CNN,]
 title: KMNIST / くずし字認識
 author: Takashi MATSUSHITA
 ---

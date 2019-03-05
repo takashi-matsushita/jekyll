@@ -1,6 +1,7 @@
 ---
 layout: post
 categories: [AI,]
+tags: [CNN,]
 title: Data Augmentation / データ拡張
 author: Takashi MATSUSHITA
 ---

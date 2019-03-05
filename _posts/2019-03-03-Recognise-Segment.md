@@ -1,6 +1,7 @@
 ---
 layout: post
 categories: [AI,]
+tags: [CNN,]
 title: Object Recognition - Segmentation / 物体認識 - セグメンテーション
 author: Takashi MATSUSHITA
 ---
