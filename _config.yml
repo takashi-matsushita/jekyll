@@ -28,7 +28,7 @@ gfm_quirks: paragraph_end
 theme: jekyll-theme-minimal
 github: [metadata]
 encoding: UTF-8
-paginate: 5
+paginate: 7
 paginate_path: "/blog/page:num/"
 plugins:
   - jekyll-feed
