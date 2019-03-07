@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [AI,]
-tags: [CNN,]
+tags: [CNN,Keras]
 title: Data Augmentation / データ拡張
 author: Takashi MATSUSHITA
 ---

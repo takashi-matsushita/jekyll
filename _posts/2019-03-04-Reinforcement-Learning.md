@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [AI,]
-tags: [RL,]
+tags: [RL,Gym,Keras]
 title: Reinforcement Learning / 強化学習
 author: Takashi MATSUSHITA
 ---

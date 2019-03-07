@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [AI,]
-tags: [CNN,]
+tags: [CNN,Yolo,Mask R-CNN]
 title: Object Recognition - Segmentation / 物体認識 - セグメンテーション
 author: Takashi MATSUSHITA
 ---
