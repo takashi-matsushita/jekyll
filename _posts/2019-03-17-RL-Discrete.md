@@ -28,7 +28,7 @@ def loss(y_true, y_pred):
   return -K.mean(log_action_prob*rtg)
 ```
 
-Q-value の最適化は既に実装したが、今回は double Deep Q-Network を使用してより安定した学習が出来るようにする. target の更新には、一定の頻度による更新と、soft update を用いた更新を試してみた. 更には、soft update の double Deep Q-Network に prioritized experience replay (PER) を適用してみた.
+Q-value の最適化は既に実装したが、今回は [double Deep Q-Network](https://arxiv.org/abs/1509.06461) を使用してより安定した学習が出来るようにする. target の更新には、一定の頻度による更新と、soft update を用いた更新を試してみた. 更には、soft update の double Deep Q-Network に [prioritized experience replay (PER)](https://arxiv.org/abs/1511.05952) を適用してみた.
 
 それぞれのアルゴリズムを比較するために、過去 100 epoch の平均報酬の推移を図にしてみる. 過去 100 epoch の平均報酬が 195 を超えた時点で試行を打ち切っている. ポリシー最適化、double DQN、soft update を用いた double DQN、PER を用いた double DQN の順に、より短期間で学習が実行できている.
 
