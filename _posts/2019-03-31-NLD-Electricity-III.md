@@ -95,22 +95,24 @@ pm.plots.plot_posterior(trace=trace["growth_rate"])
 ![NLD smart meter penetration growth rate Bays]({{ site.url }}/{{ site.baseurl }}/assets/img/posts/nld-smartmeter-friesland-rate.png)
 
 
-得られた結果を比較してみる. Bayesian の結果は、highest posterior density の 95%区間だが、Frequentist の結果は 1-$\sigma$ 区間 (68%).
+得られた結果を比較してみる. Bayesian の結果は、highest posterior density の 95%区間だが、Frequentist (SciPy fit) の結果は 1-$\sigma$ 区間 (68%). 比較の為、iminuit の minos error analysis の結果も比較する (2-$\sigma$ 区間).
 
 |                   | mean     |low      |high
 |------------------------------------------
-|midpoint    [Bays.]| 2019.038 |2018.823 |2019.247
-|growth rate [Bays.]| 0.551    |0.490    |0.614
 |midpoint    [Freq.]| 2019.282 |2019.136 |2019.427
 |growth rate [Freq.]| 0.501    |0.467    |0.534
+|midpoint    [Bays.]| 2019.306 |2019.043 |2019.607
+|growth rate [Bays.]| 0.501    |0.439    |0.565
+|midpoint    [minos]| 2019.282 |2019.140 |2019.431
+|growth rate [minos]| 0.501    |0.467    |0.536
 
-数字を見れば明らかだが先ほどの図と重ねて表示してみると、Bayesian の方が立ち上がりが早く、既にデータがある年のエラーバンドは狭く、将来のエラーバンドが広くなっている. Bayesian の方が直感に近い.
+数字を見れば明らかだが Bayesian と minos の結果を重ねて表示してみると、Bayesian の方が既にデータがある年のエラーバンドは狭く、将来のエラーバンドが広くなっている. Bayesian の方が直感に近いが、MCMC を使用しているので、試行毎に得られる結果にバラツキがある.
 ```python
 qs = scipy.stats.mstats.mquantiles(p_t, [0.025, 0.975], axis=0)
 plt.fill_between(t[:, 0], *qs, alpha=0.2, color="r")
 plt.plot(t, mean_prob_t, lw=1, ls="--", color="r", label="average posterior probability")
 plt.scatter(X, Y, color="k", s=50, alpha=0.5)
 ```
-![NLD smart meter penetration Bays./Freq.]({{ site.url }}/{{ site.baseurl }}/assets/img/posts/nld-smartmeter-freq-bays.png)
 
+![NLD smart meter penetration Bays./Freq.]({{ site.url }}/{{ site.baseurl }}/assets/img/posts/nld-smartmeter-freq-bays.png)
 以上、スマートメータの普及率を用いた統計分析を行った.
