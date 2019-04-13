@@ -120,4 +120,4 @@ sklearn.model_selection.GridSearchCV、sklearn.model_selection.KFold を用い�
 
 ### f) model blending
 * * *
-毛色の違う、Ridge、SVR、XGBRegressor を 4:4:2 の割合で結果を作成したところ、スコアは 0.11524 であった. 本稿の投稿時点で、top 9%.
+毛色の違う、Ridge、SVR、XGBRegressor を 4:4:2 の割合で結果を作成したところ、スコアは 0.11524 であった. 本稿の投稿時点で、top 9%. 
