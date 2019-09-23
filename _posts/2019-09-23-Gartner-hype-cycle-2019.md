@@ -5,7 +5,7 @@ author: Takashi MATSUSHITA
 categories: AI
 ---
 
-Gartner の 2019 年版 Hype Cycle [^1] が出ている. 5つの流行が取り上げられている.
+Gartner の 2019 年版 Hype Cycle [^1] に5つの流行が取り上げられているので、以下に記しておく.
 
 - Sensing and mobility
   - 3D sensing cameras
