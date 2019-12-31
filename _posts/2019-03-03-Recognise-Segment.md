@@ -118,3 +118,11 @@ Many cats | Cat & Dog | Good
 
 
 今回使用した技術は自動運転等に有用だと言われている.
+
+* * *
+### 補遺
+
+2019-12-31
+: TensorFlow >= v2 に対応した YOLOv3 の実装は[こちら](https://github.com/zzh8829/yolov3-tf2).
+
+* * *

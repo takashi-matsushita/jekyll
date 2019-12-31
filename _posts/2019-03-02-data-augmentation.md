@@ -119,3 +119,10 @@ F1値が 下位から５番目までの文字を拾ってみると、'え' (0.77
 
 使用したコードは[こちら](https://github.com/takashi-matsushita/lab/blob/master/dnn/cnn-k49-augment.py).
 
+* * *
+### 補遺
+
+2019-12-31
+: TensorFlow >= v2 では tf.random.set_seed(seed)、keras.callbacks.callbacks.History['accuracy']、keras.callbacks.callbacks.History['val_accuracy'] を使用する.
+
+* * *

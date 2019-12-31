@@ -87,5 +87,12 @@ F1値が 0.8以下の文字を拾ってみると、'な' (0.80)、'ま' (0.75)�
 </svg>
 </div>
 
+* * *
+### 補遺
+
+2019-12-31
+: TensorFlow >= v2 では tf.random.set_seed(seed)、keras.callbacks.callbacks.History['accuracy']、keras.callbacks.callbacks.History['val_accuracy'] を使用する.
+
+* * *
 
 [^1]: "KMNIST Dataset" (created by CODH), adapted from "Kuzushiji Dataset" (created by NIJL and others), doi:10.20676/00000341

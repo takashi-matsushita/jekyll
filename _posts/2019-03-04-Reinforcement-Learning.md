@@ -290,3 +290,11 @@ state=4 action=0
 ```
 
 今回使用したコードは[こちら](https://github.com/takashi-matsushita/lab/blob/master/dnn/rl_gym.py)
+
+* * *
+### 補遺
+
+2019-12-31
+: TensorFlow >= v2 では tf.random.set_seed(seed)、keras.callbacks.callbacks.History['accuracy']、keras.callbacks.callbacks.History['val_accuracy'] を使用する.
+
+* * *

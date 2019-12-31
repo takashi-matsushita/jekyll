@@ -87,6 +87,13 @@ print((model.predict(X) > threshold).astype(np.int))
  [0]]
 ```
 
+* * *
+### 補遺
+
+2019-12-31
+: TensorFlow >= v2 では tf.random.set_seed(seed)、keras.callbacks.callbacks.History['accuracy']、keras.callbacks.callbacks.History['val_accuracy'] を使用する.
+* * *
 
 [^1]: [python notebook](https://github.com/takashi-matsushita/lab/blob/master/dnn/xor.ipynb)  [Python 3.7.2 / Keras 2.2.4 / TensorFlow 1.12.0 を使用]
 [^2]: $$ S(x) = \frac{1}{1 + e^{-x}}$$
+
