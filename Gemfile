@@ -30,3 +30,4 @@ end
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1" if Gem.win_platform?
+gem "faraday", "~> 0.17.0"
